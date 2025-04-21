@@ -70,7 +70,7 @@ function RecipesByMeal() {
                   data-uk-nav
                 >
                   <li className="uk-parent uk-open">
-                    <a href="#">Dish Type</a>
+                    <a  to="#">Dish Type</a>
                     <ul className="uk-nav-sub">
                       {tags.map((value) => {
                         return (
@@ -84,19 +84,19 @@ function RecipesByMeal() {
                     </ul>
                   </li>
                   <li className="uk-parent">
-                    <a href="#">Meal Type</a>
+                    <a  to="#">Meal Type</a>
                     <ul className="uk-nav-sub">
                       <li>
-                        <a href="/mealType/breakfast">Breakfast</a>
+                        <a  to="/mealType/breakfast">Breakfast</a>
                       </li>
                       <li>
-                        <a href="/mealType/lunch">Lunch</a>
+                        <a  to="/mealType/lunch">Lunch</a>
                       </li>
                       <li>
-                        <a href="/mealType/snack">Snack</a>
+                        <a  to="/mealType/snack">Snack</a>
                       </li>
                       <li>
-                        <a href="/mealType/dinner">Dinner</a>
+                        <a  to="/mealType/dinner">Dinner</a>
                       </li>
                     </ul>
                   </li>
@@ -170,24 +170,24 @@ function RecipesByMeal() {
                   data-uk-margin
                 >
                   <li>
-                    <a href="#">
+                    <a  to="#">
                       <span data-uk-pagination-previous />
                     </a>
                   </li>
                   <li>
-                    <a href="#">1</a>
+                    <a  to="#">1</a>
                   </li>
                   <li className="uk-active">
                     <span>2</span>
                   </li>
                   <li>
-                    <a href="#">3</a>
+                    <a  to="#">3</a>
                   </li>
                   <li>
-                    <a href="#">4</a>
+                    <a  to="#">4</a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a  to="#">
                       <span data-uk-pagination-next />
                     </a>
                   </li>

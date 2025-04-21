@@ -13,7 +13,7 @@ function RecipesByTag() {
     axios.get(`https://dummyjson.com/recipes/tag/${tag}`).then((response) => {
       setRecipes(response.data["recipes"]);
     });
-  }, []);
+  }, [tag]);
 
   useEffect(() => {
     axios.get("https://dummyjson.com/recipes/tags").then((response) => {
@@ -30,7 +30,7 @@ function RecipesByTag() {
           style={{ backgroundImage: "url(../img/header.jpg)" }}
         >
           <div className="uk-position-cover uk-header-overlay" />
-          <div className="uk-position-relative" data-uk-grid> 
+          <div className="uk-position-relative" data-uk-grid>
             <div className="uk-width-1-2@m uk-flex uk-flex-middle">
               <div className="uk-padding-large uk-padding-remove-right">
                 <h1 className="uk-heading-small uk-margin-remove-top">
@@ -68,13 +68,13 @@ function RecipesByTag() {
                   data-uk-nav
                 >
                   <li className="uk-parent uk-open">
-                    <a href="#">Dish Type</a>
+                    <Link to="#">Dish Type</Link>
                     <ul className="uk-nav-sub">
                       {tags.map((value) => {
                         return (
                           <>
                             <li>
-                              <a href={`/recipesbytag/${value}`}>{value}</a>
+                              <Link to={`/recipesbytag/${value}`}>{value}</Link>
                             </li>
                           </>
                         );
@@ -82,19 +82,19 @@ function RecipesByTag() {
                     </ul>
                   </li>
                   <li className="uk-parent">
-                    <a href="#">Meal Type</a>
+                    <Link to="#">Meal Type</Link>
                     <ul className="uk-nav-sub">
                       <li>
-                        <a href="/mealType/breakfast">Breakfast</a>
+                        <Link to="/mealType/breakfast">Breakfast</Link>
                       </li>
                       <li>
-                        <a href="/mealType/lunch">Lunch</a>
+                        <Link to="/mealType/lunch">Lunch</Link>
                       </li>
                       <li>
-                        <a href="/mealType/snack">Snack</a>
+                        <Link to="/mealType/snack">Snack</Link>
                       </li>
                       <li>
-                        <a href="/mealType/dinner">Dinner</a>
+                        <Link to="/mealType/dinner">Dinner</Link>
                       </li>
                     </ul>
                   </li>
@@ -168,26 +168,26 @@ function RecipesByTag() {
                   data-uk-margin
                 >
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span data-uk-pagination-previous />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">1</a>
+                    <Link to="#">1</Link>
                   </li>
                   <li className="uk-active">
                     <span>2</span>
                   </li>
                   <li>
-                    <a href="#">3</a>
+                    <Link to="#">3</Link>
                   </li>
                   <li>
-                    <a href="#">4</a>
+                    <Link to="#">4</Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span data-uk-pagination-next />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
